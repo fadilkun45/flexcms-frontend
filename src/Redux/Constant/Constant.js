@@ -1,0 +1,3 @@
+const SET_CONSTANT = 'SET_CONSTANT'
+
+export { SET_CONSTANT };
