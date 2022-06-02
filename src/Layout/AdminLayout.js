@@ -7,14 +7,14 @@ const AdminLayout = () => {
   return (
 <>
           
-   <div className='flex h-screen overflow-y-hidden'>
+   <div className='flex  overflow-y-hidden'>
      <div className="w-1/6">
      <Sidebar />
      </div>
-     <div className="w-5/6 bg-custom-200 "> 
+     <div className="w-5/6 bg-custom-200 overflow-y-auto  h-screen"> 
      <UpperNavbar />
 
-        <div className=" overflow-y-auto  mt-16">
+        <div className="  mt-20">
         <Outlet />
         </div>
      </div>
