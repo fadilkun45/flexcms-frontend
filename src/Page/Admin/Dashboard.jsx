@@ -37,7 +37,7 @@ const Dashboard = () => {
         <div className="flex flex-col w-3/12">
           <div className="bg-custom-700 flex p-5 justify-between rounded-xl mb-6">
             <h1 className="font-bold text-white text-lg">Tulis Artikel</h1>
-            <Link to="#" className='text-xs p-2 bg-white rounded-full '>Tulis Sekarang</Link>
+            <Link to="/admin/create" className='text-xs p-2 bg-white rounded-full '>Tulis Sekarang</Link>
           </div>
 
           <div className="p-8 bg-white rounded-xl flex flex-col">

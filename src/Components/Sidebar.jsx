@@ -14,7 +14,7 @@ const Sidebar = () => {
             title: 'All Article'
         },
         {
-            linkTo: '#',
+            linkTo: '/admin/create',
             title: 'Buat Artikel'
         },
         {
@@ -42,7 +42,7 @@ const Sidebar = () => {
             </div>
             <div className="mt-5 flex flex-col">
 
-                <SidebarItems isDropdown={false} icon={home} linkTo={'#'} title={'Dashboard'} />
+                <SidebarItems isDropdown={false} icon={home} linkTo={'/admin/dashboard'} title={'Dashboard'} />
 
 
                 <SidebarItems isDropdown={true} icon={book} linkTo={'#'} title={'Article'} child={articleChild} />
@@ -50,7 +50,7 @@ const Sidebar = () => {
                 <SidebarItems isDropdown={true} icon={settings} linkTo={'#'} title={'settings'} child={SettingsChild} />
 
                 <Link
-                    to=""
+                    to="/admin/create"
                     className="text-sm  mt-6 py-1 rounded-xl text-center text-white bg-custom-100"
                 >
                     tulis Artikel
