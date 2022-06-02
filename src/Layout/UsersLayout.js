@@ -1,9 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router'
+import React, { useState } from 'react'
+import { Navigate, Outlet } from 'react-router'
 
 const UsersLayout = () => {
+  const [isLogin,setLogin] = useState(true)
+
+  
+
+
   return (
-    <div>UsersLayout : {<Outlet />}</div>
+    <>
+     {
+     isLogin ?  (<div>UsersLayout : {<Outlet />}</div>) : <Navigate to="/admin/login" />
+   }
+    </>
   )
 }
 

@@ -1,13 +1,23 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import Sidebar from '../Components/Sidebar'
+import UpperNavbar from '../Components/UpperNavbar'
 
-const AdminLayout = ({children}) => {
+const AdminLayout = () => {
   return (
 <>
           
-   <div>
-       <p className='text-center mb-2'>Ini Admin Layout : </p>
-       {<Outlet />}
+   <div className='flex h-screen overflow-y-hidden'>
+     <div className="w-1/6">
+     <Sidebar />
+     </div>
+     <div className="w-5/6 bg-custom-200 "> 
+     <UpperNavbar />
+
+        <div className=" overflow-y-auto">
+        <Outlet />
+        </div>
+     </div>
    </div>
 </>
   )

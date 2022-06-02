@@ -13,6 +13,16 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: ({ colors }) => ({
+      custom: {
+        100: "#4B6CF3",
+        200:  "#FAFAFA",
+        300: "#7E8299",
+        400: "#B5B5C3",
+        500: "#EBEFF3",
+        600: "#5F6276",
+        700: "#4B6CF3",
+        800: "#3F4254"
+      },
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,

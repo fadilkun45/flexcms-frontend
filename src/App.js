@@ -1,6 +1,7 @@
 import {BrowserRouter,Route,Routes,Navigate } from "react-router-dom";
 import AdminLayout from "./Layout/AdminLayout";
 import UsersLayout from "./Layout/UsersLayout";
+import Dashboard from "./Page/Admin/Dashboard";
 import Login from "./Page/Admin/Login";
 import Home from "./Page/Users/Home";
 
@@ -14,16 +15,28 @@ function App() {
     </Route>
     
     <Route path="/admin" element={ <Navigate to ="/admin/login" />} />
+    <Route  path="/admin/login" element={<Login />} />
 
     <Route path="/admin" element={<AdminLayout />} >
-     <Route  path="login/" element={<Login />} />
+     <Route path="dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
     </Route>
-
 
     </Routes>
     
     </BrowserRouter>
   );
 }
+
+const PrivateRoute = ({children}) => {
+  const isLogin = localStorage.getItem('logins')
+
+  if(isLogin){
+    return children
+  }else{
+    return  <Navigate to ="/admin/login" replace/>
+  }
+}
+
+
 
 export default App;
