@@ -1,6 +1,7 @@
 import {BrowserRouter,Route,Routes,Navigate } from "react-router-dom";
 import AdminLayout from "./Layout/AdminLayout";
 import UsersLayout from "./Layout/UsersLayout";
+import CreateArticle from "./Page/Admin/CreateArticle";
 import Dashboard from "./Page/Admin/Dashboard";
 import Login from "./Page/Admin/Login";
 import Home from "./Page/Users/Home";
@@ -19,7 +20,9 @@ function App() {
 
     <Route path="/admin" element={<AdminLayout />} >
      <Route path="dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+     <Route path="create" element={<PrivateRoute><CreateArticle /></PrivateRoute>} />
     </Route>
+
 
     </Routes>
     

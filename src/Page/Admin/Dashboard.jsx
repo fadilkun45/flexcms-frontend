@@ -11,8 +11,8 @@ import TableList from '../../Components/TableList'
 
 const Dashboard = () => {
   return (
-    <div className="w-full h-screen px-8 py-3 mt-6">
-      <div className="flex justify-between mt-12">
+    <div className="w-full h-screen px-8">
+      <div className="flex justify-between">
         <div className="flex flex-col w-8/12 ">
 
           <div className="grid grid-cols-2 gap-6">

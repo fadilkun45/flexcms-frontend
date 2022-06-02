@@ -53,12 +53,14 @@ const TableList = () => {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col mt-2.5 bg-white rounded-lg">
+            <div className="w-full flex flex-col mt-2.5 bg-white rounded-lg h-screen overflow-y-auto">
                
                 <CardListBlog img={graphUp} date={'17/02/2022'} title={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nesciunt?'} category={category} />
 
                 <CardListBlog img={graphUp} date={'17/02/2022'} title={'cara membuat website menggunakan jawa'} category={category2} />
             
+                <CardListBlog img={graphUp} date={'17/02/2022'} title={'sundaScript The powered programming Language than JS'} category={category2} />
+
                 <CardListBlog img={graphUp} date={'17/02/2022'} title={'sundaScript The powered programming Language than JS'} category={category2} />
 
             </div>

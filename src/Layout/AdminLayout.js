@@ -14,7 +14,7 @@ const AdminLayout = () => {
      <div className="w-5/6 bg-custom-200 "> 
      <UpperNavbar />
 
-        <div className=" overflow-y-auto">
+        <div className=" overflow-y-auto  mt-16">
         <Outlet />
         </div>
      </div>
